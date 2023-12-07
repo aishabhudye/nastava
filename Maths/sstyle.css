@@ -25,7 +25,7 @@ body {
     justify-content: center; 
     align-items: center;
     z-index: 1;
-    top: 10%;
+    top: 8%;
 }
 
 .banner3 {
@@ -53,14 +53,79 @@ body {
     left: 20%;
 }
 
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px; /* Increase border-radius for oblong shape */
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+
+}
+
+.contact {
+left: 70%;
+
+}
+
+.about {
+left: 76.5%;
+
+}
+
+.collaborate {
+left: 82%;
+
+}
+
+.idk {
+    font-size: 18px;
+    position: absolute;
+    left: 5%;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: white;
+    font-weight: bold;
+
+}
+
+.oneb {
+top: 20%;
+
+}
+
+.twob{
+top: 45%;
+
+}
+
+.threeb{
+top: 70%;
+
+
+}
+
+.idek {
+    font-size: 18px;
+    position:absolute;
+    left: 5%;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: white;
+    font-weight: bold;
+    left: 70%;
+    top: 20%;
+}
+
+
 .banner5 {
     position: absolute;
     background-color: #f18805; /* Banner color */
     width: 100%; /* Full width */
-    height: 120px; /* Adjust the height */
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+    height: 150px; /* Adjust the height */
     z-index: -1;
     top: 320%;
     font-size: 16px;
@@ -123,7 +188,7 @@ body {
 
 .logo {
     position: absolute;
-    top: -80px;
+    top: -60px;
     left: 0;
     margin: 10px;
     width: auto;
@@ -133,7 +198,7 @@ body {
 
 .buttons {
 position: absolute;
-top: 0px;
+top: 18px;
 right: 30px; /*button position */
 }
 
@@ -174,11 +239,11 @@ background-color: #e64a19;
 
 .centered-image {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
-    width: 1500px;
-    height: 1100px;
+    width: 1700px;
+    height: 1700px;
 }
 
 .book-image {
@@ -205,8 +270,8 @@ background-color: #e64a19;
 
 .mcq-image {
     position: absolute;
-    top: 113%;
-    left: 20%;
+    top: 105%;
+    left: 25%;
     transform: translate(-50%, -50%);
     width: 600px; 
     z-index: 1;
@@ -216,7 +281,7 @@ background-color: #e64a19;
 .trig2-image {
     position: absolute;
     top: 270%;
-    left: 85%;
+    left: 75%;
     transform: translate(-50%, -50%);
     width: 700px;
     
@@ -256,8 +321,8 @@ background-color: #e64a19;
 
 .textbook-image {
     position: absolute;
-    top: 175%;
-    left: 22%;
+    top: 174%;
+    left: 25%;
     transform: translate(-50%, -50%);
     width: 600px; 
     z-index: 1;
@@ -455,10 +520,3 @@ background-color: #e64a19;
     font-family: 'Glacial Indifference', sans-serif;
     font-size: 22px;
 }
-
-
-
- 
-
-
-
