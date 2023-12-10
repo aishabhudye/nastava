@@ -1,88 +1,122 @@
 <!DOCTYPE html>
 <html>
-<title>MCQ</title>
-<link rel="stylesheet" type="text/css" href="../Biology/style.css">
-<script src="../Biology/logic.js"></script>
+
+<head>
+    <title>NASTAVA</title>
+    <link rel="stylesheet" type="text/css" href="../Common/style.css" />
+    <script src="./logic.js"></script>
+</head>
+
+<body>
+    <div class="banner"></div>
+    <img class="logo" src="../Logo.svg" alt="Your Logo" />
+    <div class="banner2">
+        <a href="../HOMEPAGE!/homepage.html" class="menu-option">Home</a>
+        <a href="../English/english.html" class="menu-option">English</a>
+        <a href="../Maths/Maths.html" class="menu-option">Mathematics</a>
+        <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
+        <a href="../Chemistry/ChemWebpage.html" class="menu-option">Chemistry</a>
+        <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option">Physics</a>
+    </div>
+
+    <div class="buttons">
+        <button class="signup-button" onclick="showSignUpAlert()">Sign Up</button>
+        <button class="login-button" onclick="showLoginAlert()">Log In</button>
+    </div>
+
+    <div class="multiple-choice-questions">
+        <h1>Reproduction</h1>
+        <ol class="quiz">
+            <li>
+                <h4>Which term describes when a cell becomes specialised?</h4>
+                <ul class="choices">
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question0"
+                                value="A" /><span>Maturity</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question0"
+                                value="B" /><span>Adaptation</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question0"
+                                value="C" /><span>Differentation</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question0" value="D" /><span>Change</span></label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>What does a fertilised ovum become next?</h4>
+                <ul class="choices">
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question1" value="A" /><span>Baby</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question1"
+                                value="B" /><span>Chromosomes</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question1" value="C" /><span>Embryo</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question1" value="D" /><span>Zygote</span></label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Embryonic stem cells can only develop into one cell type.</h4>
+                <ul class="choices">
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question2" value="A" /><span>True</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="biology_mc2_question2" value="B" /><span>False</span></label>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+        </ol>
+    </div>
+    <div class="multiple-choice-results">
+        <button class="view-results" onclick="returnScore()">View Results</button>
+        <span id="myresults" class="my-results-hidden">Your score will appear here</span>
+    </div>
+
+    <div class="hint-section">
+
+        <h2 class="hint-for-question">Hint:</h2>
+
+        <img src="./reproductionimage.png" class="biology-image-for-hint"
+            alt="Diagram showing a beam and pivot with the moment shown">
+
+    </div>
+
+    <div class="nav-links">
+        <a href="./Biology/BMC.html">Back to the multiple choice topics menu</a>
+        <a href="./Biology/MultipleChoice2.html">Next multiple choice menu</a>
+    </div>
+
+    <div class="banner5">
+        <div class="idk oneb">
+            <h1>TERMS & CONDITIONS</h1>
+        </div>
+        <div class="idk twob">
+            <h1>PRIVACY POLICY</h1>
+        </div>
+        <div class="idk threeb">
+            <h1>© NASTAVA LEARNING & RESOURCES</h1>
+        </div>
+        <div class="idek">
+            <h1>Find out more about us:</h1>
+        </div>
+
+        <a class="botao contact" href=""> contact</a>
+        <a class="botao about" href="">about</a>
+        <a class="botao collaborate" href="">collaborate</a>
+    </div>
+
+</body>
 
 </html>
-
-
-
-<ul class="quiz">
-    <li>
-        <h1>Reproduction</h1>
-        <img src="../Logo.svg" class="logo" alt="Logo" width="auto" height="250px">
-        <img src="./reproductionimage.png" class="image3" alt="An egg cell" width="350" height="350">
-        <style>
-            .logo {
-                position: absolute;
-                top: -50px;
-                left: 0;
-                margin: 10px;
-            }
-
-            .image3 {
-                position: absolute;
-                top: 150px;
-                right: 90px;
-                margin: 10px;
-            }
-        </style>
-        <h4>Which term describes when a cell becomes specialised?</h4>
-        <ul class="choices">
-            <li>
-                <label><input type="radio" name="biology_mc2_question0" value="A" /><span>Maturity</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question0" value="B" /><span>Adaptation</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question0" value="C" /><span>Differentation</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question0" value="D" /><span>Change</span></label>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <h4>What does a fertilised ovum become next?</h4>
-        <ul class="choices">
-            <li>
-                <label><input type="radio" name="biology_mc2_question1" value="A" /><span>Baby</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question1" value="B" /><span>Chromosomes</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question1" value="C" /><span>Embryo</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question1" value="D" /><span>Zygote</span></label>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <h4>Embryonic stem cells can only develop into one cell type.</h4>
-        <ul class="choices">
-            <li>
-                <label><input type="radio" name="biology_mc2_question2" value="A" /><span>True</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="biology_mc2_question2" value="B" /><span>False</span></label>
-            </li>
-        </ul>
-    </li>
-</ul>
-<button class="view-results" onclick="returnScore()">View Results</button>
-<span id="myresults" class="my-results">My results will appear here</span>
-<br>
-<br>
-<div>
-    <a href="../Biology/BMC.html">Back to the Multiple Choice Menu</a>
-</div>
-<div style="text-align: right;">
-    <a href="../Biology/MultipleChoice3.html">Next</a>
-</div>
-<div style="text-align: left;">
-    <a href="../Biology/MultipleChoice1.html">Back</a>
-</div>

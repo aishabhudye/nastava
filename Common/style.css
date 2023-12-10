@@ -1,0 +1,365 @@
+body {
+  background-color: #fff;
+  /* Set the background color to #DDD8C4 */
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Glacial Indifference", sans-serif;
+}
+
+.menu-option {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 30px;
+  /* Adjust spacing between menu options */
+  transition: color 0.3s;
+}
+
+.menu-option:hover {
+  color: #100604;
+  /* Change color on hover */
+}
+
+
+.banner {
+  position: absolute;
+  background-color: #F0A202;
+  /* Banner color */
+  width: 100%;
+  /* Full width */
+  height: 110px;
+  /* Adjust the height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.banner2 {
+  position: absolute;
+  background-color: #F18805;
+  /* Banner color */
+  width: 100%;
+  /* Full width */
+  height: 45px;
+  /* Adjust the height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 15%;
+}
+
+.logo {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  margin: 10px;
+  width: auto;
+  height: 190px;
+}
+ /*Above style come from other team mates*/
+
+
+.multiple-choice {
+  position: absolute;
+  margin-top: 12%;
+  left: 15%;
+  width: 450px;
+  z-index: -1;
+}
+
+
+.multiple-choice-link {
+  position: absolute;
+  margin-top: 12%;
+  right: 15%;
+  text-align: center;
+  font-size: 25px;
+  z-index: -1;
+}
+
+
+.exam-papers {
+  position: absolute;
+  margin-top: 37%;
+  right: 15%;
+  width: 450px;
+  z-index: -1;
+}
+
+
+.exam-papers-link {
+  position: absolute;
+  margin-top: 37%;
+  left: 15%;
+  text-align: center;
+  font-size: 25px;
+  z-index: -1;
+}
+
+.revision {
+  position: absolute;
+  margin-top: 62%;
+  left: 15%;
+  width: 450px;
+  z-index: -1;
+}
+
+
+.revision-link {
+  position: absolute;
+  margin-top: 62%;
+  right: 15%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.back-to-subject-page {
+  position: absolute;
+  margin-top: 45%;
+  right: 25%;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  /* Increase border-radius for oblong shape */
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  text-decoration: none;
+
+}
+
+.contact {
+  left: 70%;
+  
+  }
+  
+  .about {
+  left: 79%;
+  
+  }
+  
+  .collaborate {
+  left: 87%;
+  
+  }
+
+
+.idk {
+  font-size: 10px;
+  position: absolute;
+  left: 5%;
+  font-family: 'Glacial Indifference', sans-serif;
+  color: white;
+  font-weight: bold;
+
+}
+
+.oneb {
+  top: 5%;
+}
+
+.twob {
+  top: 30%;
+}
+
+.threeb {
+  top: 55%;
+}
+
+.idek {
+  font-size: 10px;
+  position: absolute;
+  left: 5%;
+  font-family: 'Glacial Indifference', sans-serif;
+  color: white;
+  font-weight: bold;
+  left: 70%;
+  top: 20%;
+  text-decoration: none;
+}
+
+
+.banner5 {
+  position: absolute;
+  margin-top:120%;
+  background-color: #f18805;
+  /* Banner color */
+  width: 100%;
+  /* Full width */
+  height: 150px;
+  /* Adjust the height */
+  z-index: -1;
+}
+
+.margin-top-physics {
+  margin-top: 92%;
+}
+
+.margin-top-pmc {
+  margin-top: 50%;
+}
+
+
+.buttons {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  /*button position */
+}
+
+.login-button,
+.signup-button {
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button {
+  background-color: #F18805;
+  color: #fff;
+  right: 5px;
+}
+
+.login-button:hover {
+  background-color: #e64a19;
+}
+
+.signup-button {
+  background-color: #D95D39;
+  color: #fff;
+  border: 2px dashed #fff;
+  right: 50px;
+  /* Adjust this value to move the button more to the left */
+}
+
+
+.signup-button:hover {
+  background-color: #e64a19;
+}
+
+.video {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.examlink {
+  position: absolute;
+  margin-top: 10%;
+  right: 60%;
+  text-align: center;
+  font-family: "Glacial Indifference", sans-serif;
+  font-size: 25px;
+}
+
+.multiple-choice-questions {
+  position: absolute;
+  margin-top: 15%;
+  left: 15%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.quiz {
+  list-style-type: decimal;
+  top: 20%;
+  padding: 0;
+}
+
+.choices {
+  list-style-type: none;
+  top: 20%;
+  padding: 0;
+}
+
+.choices li {
+  margin-bottom: 5px;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+}
+
+.choices label,
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.multiple-choice-results {
+  position: absolute;
+  margin-top: 65%;
+  left: 15%;
+}
+
+.view-results {
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  background: teal;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.my-results-hidden {
+  display: none;
+}
+
+.hint-section {
+  position: absolute;
+  margin-top: 70%;
+  left: 15%;
+}
+
+.image-for-hint {
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+}
+
+.forces-image-for-hint {
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+  width: 1000%;
+}
+.biology-image-for-hint {
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+  width: 700%;
+}
+
+.nav-links {
+  position: absolute;
+  margin-top:110%;
+  left: 30%
+}
+
+
