@@ -11,6 +11,11 @@
       justify-content: flex-end;
       margin: 0;
     }
+    .container {
+      width: 1920px;
+      height: 1080px;
+      margin: 0 auto;
+    }
 
     .menu-option {
       text-decoration: none;
@@ -26,157 +31,224 @@
     }
 
     .banner {
-    position: absolute;
-    background-color: #F0A202; /* Banner color */
-    width: 100%; /* Full width */
-    height: 110px; /* Adjust the height */
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    z-index: -1;
-}
-
-.banner2 {
-    position: absolute;
-    background-color: #F18805; /* Banner color */
-    width: 100%; /* Full width */
-    height: 45px; /* Adjust the height */
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    z-index: 1;
-    top: 8%;
-}
+      position: absolute;
+      background-color: #f0a202; /* Banner color */
+      width: 100%; /* Full width */
+      height: 110px; /* Adjust the height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+    }
+    .banner2 {
+      position: absolute;
+      background-color: #f18805; /* Banner color */
+      width: 100%; /* Full width */
+      height: 45px; /* Adjust the height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      top: 10%;
+    }
 
     .logo {
-    position: absolute;
-    top: -60px;
-    left: 0;
-    margin: 10px;
-    width: auto;
-    height: 190px;
-}
+      position: absolute;
+      top: -70px;
+      left: 0;
+      margin: 10px;
+      width: auto;
+      height: 190px;
+    }
+    h1 {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    p {
+      line-height: 1.1em;
+    }
+    .trigger {
+      position: absolute;
+      background: #f18805;
+      border: 2px solid #040f0f;
+      color: #fff;
+      font-size: 22px;
+      top: 1%;
+      left: 84%;
+      padding: 7px 20px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .trigger:hover {
+      background: #040f0f;
+    }
+    .user {
+      position: absolute;
+      top: 1%;
+      left: 93%;
+      width: 6%;
+      height: 10%;
+      transition: transform 0.3s ease-in-out;
+    }
+    .user:hover {
+      transform: scale(1.2);
+    }
 
-    .buttons {
-position: absolute;
-top: 18px;
-right: 30px; /*button position */
-}
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 500ms;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .overlay:target {
+      opacity: 1;
+      visibility: visible;
+    }
+    .wrapper {
+      position: relative;
+      width: 50%;
+      min-height: 400px;
+      display: flex;
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      font-size: 30px;
+      color: #dd3e42;
+      font-weight: bold;
+      transition: all 200ms;
+    }
+    .close:hover {
+      transform: scale(1.2);
+    }
 
-.login-button, .signup-button {
-width: 110px;
-height: 40px;
-font-size: 16px;
-border: none;
-border-radius: 30px;
-margin: 10px;
-cursor: pointer;
-transition: background-color 0.3s;
-}
+    .column {
+      width: 50%;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .details {
+      background: #f18805;
+    }
+    .details h1 {
+      color: #10213e;
+    }
 
-.login-button {
-background-color: #F18805;
-color: #fff;
-right: 5px;
-}
+    .signin,
+    .signup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.login-button:hover {
-background-color: #e64a19;
-}
+    input {
+      background: #eee;
+      border: none;
+      padding: 12px 15px;
+      border: 2px;
+      margin: 8px 0;
+      font-family: inherit;
+      color: #202c59;
+      font-size: inherit;
+      transition: transform 0.3s ease-in-out;
+    }
 
-.signup-button {
-background-color: #D95D39;
-color: #fff;
-border: 2px dashed #fff;
-right: 50px; /* Adjust this value to move the button more to the left */
-}
+    input:focus {
+      outline-color: #202c59;
+    }
+    input:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 15px 0;
+      transition: transform 0.3s ease-in-out;
+    }
+    a:hover {
+      transform: scale(1.05);
+    }
+    .form-submit {
+      background: #10213e;
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      padding: 12px 45px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 80ms ease-in;
+    }
+    .form-submit:hover {
+      transform: scale(1.1);
+    }
+    .signup .form-submit {
+      margin-top: 15px;
+    }
+    #signin,
+    #signup {
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    #signin,
+    #signup:hover {
+      transform: scale(1.1);
+    }
 
+    span {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.5em;
+      color: #100604;
+    }
 
-.signup-button:hover {
-background-color: #e64a19;
-}
+    .content {
+      background: #10213e;
+      color: #fff;
+      text-align: center;
+    }
 
-/* ////////////////////////////////////////////////////////////////  */
-/* bottom banner with information - added by sanuzia :) */
-    .botao {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border-radius: 30px; /* Increase border-radius for oblong shape */
-    transition: background-color 0.3s;
-    cursor: pointer;
-    font-family: 'Glacial Indifference', sans-serif;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-
-}
-
-.contact {
-left: 70%;
-
-}
-
-.about {
-left: 76.5%;
-
-}
-
-.collaborate {
-left: 82%;
-
-}
-
-.idk {
-    font-size: 18px;
-    position: absolute;
-    left: 5%;
-    font-family: 'Glacial Indifference', sans-serif;
-    color: white;
-    font-weight: bold;
-
-}
-
-.oneb {
-top: 20%;
-
-}
-
-.twob{
-top: 45%;
-
-}
-
-.threeb{
-top: 70%;
-
-
-}
-
-.idek {
-    font-size: 18px;
-    position:absolute;
-    left: 5%;
-    font-family: 'Glacial Indifference', sans-serif;
-    color: white;
-    font-weight: bold;
-    left: 70%;
-    top: 20%;
-}
-
-.banner5 {
-    position: absolute;
-    background-color: #f18805; /* Banner color */
-    width: 100%; /* Full width */
-    height: 150px; /* Adjust the height */
-    z-index: -1;
-    top: 420%;
-    font-size: 16px;
-    
-}
-
-/* ///////////////////////////////////////////// */
+    @media only screen and (max-width: 900px) {
+      .wrapper {
+        width: 80%;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      .wrapper {
+        width: 80%;
+        flex-direction: column-reverse;
+      }
+      .column {
+        width: 100%;
+      }
+      .close {
+        top: 0;
+        right: 10px;
+        margin: 0;
+      }
+    }
 
     .english-tower {
       position: absolute;
@@ -194,17 +266,17 @@ top: 70%;
       border-radius: 30px;
       line-height: 1.5;
     }
-
     .inspector-calls h2 {
       position: absolute;
       margin-top: 13%;
       left: 10px;
-      background-color: #d95d39;
+      background-color: #f18805;
       width: 550px;
       height: 440px;
       padding-top: 2%;
       text-align: center;
       color: #fff;
+      border-radius: 10%;
     }
     .inspector-calls img {
       position: absolute;
@@ -212,38 +284,41 @@ top: 70%;
       left: 10%;
       width: 300px;
       height: 360px;
+      border-radius: 10%;
     }
     .inspector-calls a {
       position: absolute;
       text-align: center;
       margin-top: 32%;
       left: 35%;
-      width: 100px;
+      width: 150px;
       height: 20px;
-      border: 15px dashed #100604;
+      border: 5px solid #100604;
       background-color: white;
-      padding: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
+      padding: 40px 10px 40px;
       color: #000;
     }
     .inspector-calls a:hover {
-      background-color: #f0a202;
+      background-color: #040f0f;
       color: #fff;
+      transform: scale(1.1);
     }
 
     .christmas-carol h2 {
       position: absolute;
       margin-top: 35%;
       left: 800px;
-      background-color: #d95d39;
+      background-color: #f18805;
       width: 550px;
       height: 440px;
       padding-top: 2%;
       text-align: center;
       color: #fff;
-      /* border: 5px dashed #202c59; */
+      border-radius: 10%;
     }
     .christmas-carol img {
       position: absolute;
@@ -251,37 +326,41 @@ top: 70%;
       left: 70%;
       width: 300px;
       height: 360px;
+      border-radius: 10%;
     }
     .christmas-carol a {
       position: absolute;
       text-align: center;
       margin-top: 54%;
-      left: 45%;
-      width: 100px;
+      left: 48%;
+      width: 150px;
       height: 20px;
-      border: 15px dashed #100604;
+      border: 5px solid #100604;
       background-color: white;
-      padding: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
+      padding: 40px 10px 40px;
       color: #000;
     }
     .christmas-carol a:hover {
-      background-color: #f0a202;
+      background-color: #040f0f;
       color: #fff;
+      transform: scale(1.1);
     }
 
     .macbeth h2 {
       position: absolute;
       margin-top: 60%;
       left: 10px;
-      background-color: #d95d39;
+      background-color: #f18805;
       width: 550px;
       height: 440px;
       padding-top: 2%;
       text-align: center;
       color: #fff;
+      border-radius: 10%;
     }
 
     .macbeth img {
@@ -290,38 +369,41 @@ top: 70%;
       left: 10%;
       width: 300px;
       height: 360px;
+      border-radius: 10%;
     }
     .macbeth a {
       position: absolute;
       text-align: center;
-      margin-top: 84%;
+      margin-top: 80%;
       left: 35%;
-      width: 100px;
+      width: 150px;
       height: 20px;
-      border: 15px dashed #100604;
+      border: 5px solid #100604;
       background-color: white;
-      padding: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
+      padding: 40px 10px 40px;
       color: #000;
     }
     .macbeth a:hover {
-      background-color: #f0a202;
+      background-color: #040f0f;
       color: #fff;
+      transform: scale(1.1);
     }
 
     .frankenstein h2 {
       position: absolute;
       margin-top: 75%;
       left: 800px;
-      background-color: #d95d39;
+      background-color: #f18805;
       width: 550px;
       height: 440px;
       padding-top: 2%;
       text-align: center;
       color: #fff;
-      /* border: 5px dashed #202c59; */
+      border-radius: 10%;
     }
     .frankenstein img {
       position: absolute;
@@ -329,25 +411,28 @@ top: 70%;
       left: 70%;
       width: 300px;
       height: 360px;
+      border-radius: 10%;
     }
     .frankenstein a {
       position: absolute;
       text-align: center;
-      margin-top: 98%;
-      left: 45%;
-      width: 100px;
+      margin-top: 95%;
+      left: 48%;
+      width: 150px;
       height: 20px;
-      border: 15px dashed #100604;
+      border: 5px solid #100604;
       background-color: white;
-      padding: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
+      padding: 40px 10px 40px;
       color: #000;
     }
     .frankenstein a:hover {
-      background-color: #f0a202;
+      background-color: #040f0f;
       color: #fff;
+      transform: scale(1.1);
     }
     .exam-papers h2 {
       position: absolute;
@@ -382,20 +467,23 @@ top: 70%;
       margin-top: 168%;
       left: 27%;
       text-align: center;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       z-index: 10;
-      background-color: #f18805;
+      background-color: #f0a202;
       line-height: 50px;
       padding: 2%;
       list-style: none;
       font-size: 17px;
-      border: 4px dashed;
+      border: 5px solid #100604;
+      font-size: 22px;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
     }
-    .exam-papers1 ul li a{
+    .exam-papers1 ul li a {
       text-decoration: none;
       color: #fff;
     }
-    .exam-papers1 ul li a:hover{
+    .exam-papers1 ul li a:hover {
       color: #040f0f;
     }
     .exam-papers2 ul {
@@ -403,23 +491,26 @@ top: 70%;
       margin-top: 168%;
       left: 77%;
       text-align: center;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       z-index: 10;
-      background-color: #f18805;
+      background-color: #f0a202;
       line-height: 50px;
       padding: 2%;
       list-style: none;
       font-size: 17px;
-      border: 4px dashed;
+      border: 5px solid #100604;
+      font-size: 22px;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
     }
-    .exam-papers2 ul li a{
+    .exam-papers2 ul li a {
       text-decoration: none;
       color: #fff;
     }
-    .exam-papers2 ul li a:hover{
+    .exam-papers2 ul li a:hover {
       color: #040f0f;
     }
-    
+
     .paper1 {
       position: absolute;
       margin-top: 131%;
@@ -466,69 +557,70 @@ top: 70%;
       padding: 2%;
       width: 87%;
       height: 80%;
-      border: dashed 6px black;
+      border: 6px solid black;
+      border-radius: 20px;
     }
     .revision-vids1 a {
       position: absolute;
       text-decoration: none;
       margin-top: 203%;
-      left: 7%;
+      left: 8%;
       color: white;
       font-size: 20px;
     }
     .revision-vids1 a:hover {
       color: #100604;
     }
-    .lang1{
+    .lit1 {
       position: absolute;
-      left: 17%;
-      top: 425%;
-      transform: translate(-50%,-50%);
-      z-index: 10;
+      left: 10%;
       width: 280px;
-      height: 210px;
+      height: 170px;
+      top: 345%;
+      z-index: 1;
     }
-    .lang2{
-      position: absolute;
-      left: 34%;
-      top: 393%;
-      transform: translate(-50%,-50%);
-      z-index: 10;
-      width: 280px;
-      height: 210px;
-    }
-    .lit1{
-      position: absolute;
-      left: 47%;
-      top: 425%;
-      transform: translate(-50%,-50%);
-      z-index: 10;
-      width: 280px;
-      height: 210px;
-    }
-    .lit2{
-      position: absolute;
-      left: 80.5%;
-      top: 425%;
-      transform: translate(-50%,-50%);
-      z-index: 10;
-      width: 280px;
-      height: 210px;
-    }
-
 
     .revision-vids2 a {
       position: absolute;
       text-decoration: none;
       margin-top: 203%;
-      left: 38%;
+      left: 40%;
       color: white;
       font-size: 20px;
     }
     .revision-vids2 a:hover {
       color: #100604;
     }
+    .lit2 {
+      position: absolute;
+      left: 42.5%;
+      width: 280px;
+      height: 170px;
+      top: 345%;
+      z-index: 1;
+    }
+
     .revision-vids3 a {
+      position: absolute;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 202%;
+      left: 71%;
+      color: white;
+      font-size: 20px;
+    }
+    .revision-vids3 a:hover {
+      color: #100604;
+    }
+    .lit3 {
+      position: absolute;
+      left: 71%;
+      width: 280px;
+      height: 170px;
+      top: 345%;
+      z-index: 1;
+    }
+    .revision-vids4 a {
       position: absolute;
       text-decoration: none;
       margin-top: 223%;
@@ -536,207 +628,292 @@ top: 70%;
       color: white;
       font-size: 20px;
     }
-    .revision-vids3 a:hover {
-      color: #100604;
-    }
-    .revision-vids4 a {
-      position: absolute;
-      text-decoration: none;
-      margin-top: 203%;
-      left: 68%;
-      color: white;
-      font-size: 20px;
-    }
     .revision-vids4 a:hover {
       color: #100604;
+    }
+    .lang1 {
+      position: absolute;
+      left: 25.5%;
+      width: 280px;
+      height: 170px;
+      top: 382%;
+      z-index: 2;
     }
     .revision-vids5 a {
       position: absolute;
       text-decoration: none;
       margin-top: 223%;
-      left: 56%;
+      left: 55%;
       color: white;
       font-size: 20px;
     }
     .revision-vids5 a:hover {
       color: #100604;
     }
-/*     .end ul {
+    .lang2 {
       position: absolute;
-      color: #fff;
-      line-height: 150%;
+      left: 56.5%;
+      width: 280px;
+      height: 170px;
+      top: 382%;
+      z-index: 2;
+    }
+    .banner3 {
+      position: absolute;
       background-color: #f18805;
-      width: 100%;
       height: 70px;
-      list-style: none;
-      margin-top: 240%;
-      left: 0px;
-      padding: 1%;
-    } */
-/*     .buttons3 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0%;
+      top: 445%;
+      padding-bottom: 5%;
+      z-index: -1;
+    }
+    .idk {
+      font-size: 8px;
       position: absolute;
-      top: 430%;
-      right: 30px; /*button position */
-/*     } */
-/*     .contact,
-    .about {
-      width: 110px;
-      height: 40px;
-      font-size: 16px;
-      border: none;
-      border-radius: 30px;
-      margin: 20px;
-      cursor: pointer;
+      left: 3%;
+      font-family: "Glacial Indifference", sans-serif;
+      color: white;
+    }
+
+    .oneb {
+      top: 10%;
+    }
+    .twob {
+      top: 35%;
+    }
+
+    .threeb {
+      top: 60%;
+    }
+
+    .idek {
+      font-size: 15px;
+      position: absolute;
+      left: 5%;
+      color: white;
+      font-weight: bold;
+      left: 73%;
+      top: 6%;
+    }
+    .botao {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: 3px solid #000;
+      color: #000;
+      border-radius: 30px; /* Increase border-radius for oblong shape */
       transition: background-color 0.3s;
+      cursor: pointer;
+      font-family: "Glacial Indifference", sans-serif;
+      font-size: 10px;
+      position: absolute;
+      top: 50%;
     }
-
-    .contact {
-      background-color: #d95d39;
+    .botao:hover {
       color: #fff;
-      right: 5px;
+      background-color: #000;
     }
-
-    .contact:hover {
-      background-color: #040f0f;
+    .contact {
+      left: 73%;
     }
 
     .about {
-      background-color: #d95d39;
-      color: #fff;
-      right: 50px; /* Adjust this value to move the button more to the left */
+      left: 80.5%;
     }
 
-/*     .about:hover {
-      background-color: #040f0f;
-    } */ 
-   
+    .collaborate {
+      left: 87%;
+    }
   </style>
   <body>
-    <div class="banner"></div>
-    <div class="banner2">
-      <a href="../English/english.html" class="menu-option">English</a>
-      <a href="../Maths/Maths.html" class="menu-option">Mathematics</a>
-      <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
-      <a href="../Chemistry/ChemWebpage.html" class="menu-option">Chemistry</a>
-      <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option">Physics</a>
-    </div>
-    <div class="buttons">
-      <button class="signup-button">Sign Up</button>
-      <button class="login-button">Log In</button>
-    </div>
-    <div class="exam-papers">
-      <h2>EXAM PAPERS</h2>
-      <h3>PAPER 1</h3>
-      <h4>PAPER 2</h4>
-    </div>
-    <div class="exam-papers1">
-      <ul>
-        <li><a href="paper-1-knowledge-organiser.docx">Paper 1 Knowledge Organiser</a>
-        <li><a href="June 2022 QP.PDF">Paper 1 Question Paper June 2022</a></li>
-        <li><a href="June 2022 MS.PDF">Paper 1 Mark Scheme June 2022</a></li>
-      </ul>
-    </div>
-    <div class="exam-papers2">
-      <ul>
-        <li><a href="AQA-Paper2-QP-JUN22.PDF">Paper 2 Question Paper June 2022</a></li>
-        <li><a href="AQA-Paper2-MS-JUN22.PDF">Paper 2 Mark Scheme June 2022</a></li>
-      </ul>
-    </div>
-
-
-    <img class="paper1" src="paper1.png" alt="exam checklist" />
-    <img class="paper2" src="paper1.png" alt="exam papers"> 
-    <img class="logo" src="Logo.svg" alt="Your Logo" />
-    <img class ="lang1" src="../English/lang1.jpg" alt="video thumbnail">
-    <!-- <img class="lang2" src="lang2.jpg" alt="video thumnail"> -->
-    <img class="lit1" src="../English/lit1.webp" alt="video thumbnail">
-    <img class="lit2" src="../English/lit2.webp" alt="video thumbnail"> 
-
-    <div class="revision-vids">
-      <h2>Revision Videos</h2>
-    </div>
-
-    <div class="revision-vids1">
-      <a href="https://youtu.be/hMhQIX9DCcQ?si=pA8PMkTZVomo-aaJ"
-        >AQA English Language Paper 1</a
-      >
-      >
-    </div>
-    <div class="revision-vids2">
-      <a href="https://youtu.be/gzsKbudx5HM?si=VMTh4RdkNqQ36lbM"
-        >AQA English Literature Paper 1</a
-      >
-    </div>
-    <div class="revision-vids3">
-      <a href="https://youtu.be/yKZ_Tr2Y-CE?si=eK9EISnOxsKuCHZV"
-        >AQA English Language Paper 2</a
-      >
-    </div>
-    <div class="revision-vids4">
-      <a href="https://youtu.be/u-oe8bwI5t0?si=pgCwIH4EaJhTMYgj"
-        >English Literature Exam Paper Walkthrough</a
-      >
-    </div>
-    <div class="revision-vids5">
-      <a href="https://youtu.be/lPImUVFna3Y?si=5V36lIjkFT4HNVo0"
-        >AQA English Literature Paper 2</a
-      >
-    </div>
-
-    <div class="inspector-calls">
-      <h2>AN INSPECTOR CALLS</h2>
-      <a
-        href="https://genius.com/J-b-priestley-an-inspector-calls-all-acts-123-annotated"
-        >Learn More</a
-      >
-      >
-      <img src="inspector-calls.jpg" alt="dark picture of man in hat" />
-    </div>
-
-    <div class="christmas-carol">
-      <h2>CHRISTMAS CAROL</h2>
-      <a href="https://www.sparknotes.com/lit/christmascarol/">Learn More</a>>
-      <img
-        src="christmas-carol.jpg"
-        alt="buildings with blue background and stars with a man"
-      />
-    </div>
-
-    <div class="macbeth">
-      <h2>MACBETH</h2>
-      <a href="https://www.owleyes.org/text/macbeth">Learn More</a>>
-      <img src="macbeth.jpg" alt="red book with sword through crown" />
-    </div>
-    <div class="frankenstein">
-      <h2>FRANKENSTEIN</h2>
-      <a href="https://www.owleyes.org/text/frankenstein">Learn More</a>>
-      <img src="frankenstein.jpg" alt="dark background with lightning strike" />
-    </div>
-    <!-- <div class="buttons3">
-      <button class="contact">Contact</button>
-      <button class="about">About</button>
-      <button class="about">Collaborate</button>
-    </div> -->
-<!--     <div class="end">
-      <ul>
-        <li>TERMS AND CONDITIONS</li>
-        <li>PRIVACY POLICY</li>
-        <li>©️ NASTAVA LEARNING & RESOURCES</li>
-      </ul>
-    </div> -->
-    <div class="banner5"> 
-        <div class="idk oneb"h1>TERMS & CONDITIONS</h1>
+    <div class="container">
+      <div class="banner"></div>
+      <img class="logo" src="../Logo.svg" alt="Your Logo" />
+      <div class="banner2">
+        <a href="nastava/HOMEPAGE!/homepage.html" class="menu-option">Home</a>
+        <a href="../English/english.html" class="menu-option">English</a>
+        <a href="../Maths/Maths.html" class="menu-option">Mathematics</a>
+        <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
+        <a href="../Chemistry/ChemWebpage.html" class="menu-option"
+          >Chemistry</a
+        >
+        <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option"
+          >Physics</a
+        >
+      </div>
+      <a href="#popup" class="trigger">Account</a>
+      <img class="user" src="user.png" alt="Your user" />
+      <div id="popup" class="overlay">
+        <div class="wrapper">
+          <a href="#" class="close">&times;</a>
+          <div class="column details">
+            <div class="signin">
+              <h1>Log In</h1>
+              <input type="email" placeholder="Enter Username" />
+              <input type="password" placeholder="Enter Password" />
+              <a href="#">Forgot Password</a>
+              <button class="form-submit">Log In!</button>
+              <span
+                >You don't have an account yet?
+                <button id="signup">Create it now!</button></span
+              >
+            </div>
+            <div class="signup">
+              <h1>Sign Up</h1>
+              <input type="name" placeholder="Full Name" />
+              <input type="email" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <button class="form-submit">Sign Up!</button>
+              <span
+                >Already have an account?
+                <button id="signin">Log in!</button></span
+              >
+            </div>
+          </div>
+          <div class="column content">
+            <div class="signin">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+            </div>
+            <div class="signup">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start your journey with us!</p>
+            </div>
+          </div>
         </div>
-        <div class="idk twob"h1>PRIVACY POLICY</h1>
-        </div>
-        <div class="idk threeb" h1>© NASTAVA LEARNING & RESOURCES</h1>
-        </div>
-        <div class="idek"h1>Find out more about us:</h1>
+      </div>
+      <div class="exam-papers">
+        <h2>EXAM PAPERS</h2>
+        <h3>PAPER 1</h3>
+        <h4>PAPER 2</h4>
+      </div>
+      <div class="exam-papers1">
+        <ul>
+          <li>
+            <a href="paper-1-knowledge-organiser.docx"
+              >Paper 1 Knowledge Organiser</a
+            >
+          </li>
+          <li>
+            <a href="June 2022 QP.PDF">Paper 1 Question Paper June 2022</a>
+          </li>
+          <li><a href="June 2022 MS.PDF">Paper 1 Mark Scheme June 2022</a></li>
+        </ul>
+      </div>
+      <div class="exam-papers2">
+        <ul>
+          <li>
+            <a href="AQA-Paper2-QP-JUN22.PDF"
+              >Paper 2 Question Paper June 2022</a
+            >
+          </li>
+          <li>
+            <a href="AQA-Paper2-MS-JUN22.PDF">Paper 2 Mark Scheme June 2022</a>
+          </li>
+        </ul>
+      </div>
+
+      <img class="paper1" src="paper1.png" alt="exam checklist" />
+      <img class="paper2" src="paper1.png" alt="exam papers" />
+      <img class="logo" src="Logo.svg" alt="Your Logo" />
+      <img class="lang1" src="lang1.jpg" alt="video thumbnail" />
+      <img class="lang2" src="lang2.jpg" alt="video thumnail" />
+      <img class="lit1" src="lit1.webp" alt="video thumbnail" />
+      <img class="lit2" src="lit2.webp" alt="video thumbnail" />
+      <img class="lit3" src="lit3.jpg" alt="video thumbnail" />
+
+      <div class="revision-vids">
+        <h2>Revision Videos</h2>
+      </div>
+
+      <div class="revision-vids1">
+        <a href="https://youtu.be/gzsKbudx5HM?si=VMTh4RdkNqQ36lbM"
+          >AQA ENGLISH LITERATURE PAPER 1</a
+        >
+      </div>
+
+      <div class="revision-vids2">
+        <a href="https://youtu.be/lPImUVFna3Y?si=5V36lIjkFT4HNVo0"
+          >AQA ENGLISH LITERATURE PAPER 2</a
+        >
+      </div>
+      <div class="revision-vids3">
+        <a href="https://youtu.be/u-oe8bwI5t0?si=pgCwIH4EaJhTMYgj"
+          >ENGLISH LITERATURE<br />
+          EXAM PAPER WALKTHROUGH</a
+        >
+      </div>
+
+      <div class="revision-vids4">
+        <a href="https://youtu.be/hMhQIX9DCcQ?si=pA8PMkTZVomo-aaJ"
+          >AQA ENGLISH LANGUAGE PAPER 1</a
+        >
+      </div>
+
+      <div class="revision-vids5">
+        <a href="https://youtu.be/yKZ_Tr2Y-CE?si=eK9EISnOxsKuCHZV"
+          >AQA ENGLISH LANGUAGE PAPER 2</a
+        >
+      </div>
+
+      <div class="inspector-calls">
+        <h2>AN INSPECTOR CALLS</h2>
+        <a
+          href="https://genius.com/J-b-priestley-an-inspector-calls-all-acts-123-annotated"
+          >Learn More</a
+        >
+
+        <img src="inspector-calls.jpg" alt="dark picture of man in hat" />
+      </div>
+
+      <div class="christmas-carol">
+        <h2>CHRISTMAS CAROL</h2>
+        <a href="https://www.sparknotes.com/lit/christmascarol/">Learn More</a>
+        <img
+          src="christmas-carol.jpg"
+          alt="buildings with blue background and stars with a man"
+        />
+      </div>
+
+      <div class="macbeth">
+        <h2>MACBETH</h2>
+        <a href="https://www.owleyes.org/text/macbeth">Learn More</a>
+        <img src="macbeth.jpg" alt="red book with sword through crown" />
+      </div>
+      <div class="frankenstein">
+        <h2>FRANKENSTEIN</h2>
+        <a href="https://www.owleyes.org/text/frankenstein">Learn More</a>
+        <img
+          src="frankenstein.jpg"
+          alt="dark background with lightning strike"
+        />
+      </div>
+
+      <div class="banner3">
+        <div class="idk oneb">
+          <h1>TERMS & CONDITIONS</h1>
         </div>
 
-        <a class="botao contact" href=""> contact</a>
-        <a class="botao about" href="">about</a>
-        <a class="botao collaborate" href="">collaborate</a>
+        <div class="idk twob">
+          <h1>PRIVACY POLICY</h1>
+        </div>
+
+        <div class="idk threeb">
+          <h1>© NASTAVA LEARNING & RESOURCES</h1>
+        </div>
+
+        <div class="idek"><h1>Find out more about us:</h1></div>
+
+        <a class="botao contact" href="">CONTACT</a>
+        <a class="botao about" href="">ABOUT</a>
+        <a class="botao collaborate" href="">COLLABORATE</a>
+      </div>
     </div>
   </body>
 </html>
