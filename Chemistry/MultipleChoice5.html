@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html>
-<title>MCQ</title>
-<link rel="stylesheet" type="text/css" href="../Chemistry/style.css">
-<script src="../Chemistry/logic.js"></script>
+
+<head>
+    <title>NASTAVA</title>
+    <link rel="stylesheet" type="text/css" href="../Common/style.css" />
+    <script src="./logic.js"></script>
+</head>
+
+<body>
+    <div class="banner"></div>
+    <img class="logo" src="../Logo.svg" alt="Your Logo" />
+    <div class="banner2">
+        <a href="../HOMEPAGE!/homepage.html" class="menu-option">Home</a>
+        <a href="../English/english.html" class="menu-option">English</a>
+        <a href="../Maths/Maths.html" class="menu-option">Mathematics</a>
+        <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
+        <a href="../Chemistry/ChemWebpage.html" class="menu-option">Chemistry</a>
+        <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option">Physics</a>
+    </div>
+
+    <div class="buttons">
+        <button class="signup-button" onclick="showSignUpAlert()">Sign Up</button>
+        <button class="login-button" onclick="showLoginAlert()">Log In</button>
+    </div>
+
+    <div class="multiple-choice-questions">
+        <h1>Irreversible Changes</h1>
+        <ol class="quiz">
+            <li>
+                <h4>What happens to atoms during a chemical reaction?</h4>
+                <ul class="choices">
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question0"
+                                value="A" /><span>Dissolved</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question0"
+                                value="B" /><span>Rearranged</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question0"
+                                value="C" /><span>Created</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question0"
+                                value="D" /><span>Destroyed</span></label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>True or false? Dissolving is an example of a chemical reaction.</h4>
+                <ul class="choices">
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question1" value="A" /><span>True</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question1" value="B" /><span>False</span></label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Which of these is an example of a chemical reaction?</h4>
+                <ul class="choices">
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question2"
+                                value="A" /><span>Cooking</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question2" value="B" /><span>Ice
+                                Melting</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="chemistry_mc5_question2" value="C" /><span>Water
+                                Boiling</span></label>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="multiple-choice-results">
+        <button class="view-results" onclick="returnScore()">View Results</button>
+        <span id="myresults" class="my-results-hidden">Your score will appear here</span>
+    </div>
+
+    <div class="hint-section">
+
+        <h2 class="hint-for-question">Hint:</h2>
+
+        <img src="./irreversiblechanges.jpg" class="image-for-hint"
+            alt="Diagram showing a beam and pivot with the moment shown">
+
+    </div>
+
+    <div class="nav-links">
+        <a href="../Chemistry/CMC.html">Back to the multiple choice topics menu</a>
+        <a href="../Chemistry/MultipleChoice4.html">Back to  previous multiple choice</a>
+    </div>
+
+    <div class="banner5">
+        <div class="idk oneb">
+            <h1>TERMS & CONDITIONS</h1>
+        </div>
+        <div class="idk twob">
+            <h1>PRIVACY POLICY</h1>
+        </div>
+        <div class="idk threeb">
+            <h1>© NASTAVA LEARNING & RESOURCES</h1>
+        </div>
+        <div class="idek">
+            <h1>Find out more about us:</h1>
+        </div>
+
+        <a class="botao contact" href=""> contact</a>
+        <a class="botao about" href="">about</a>
+        <a class="botao collaborate" href="">collaborate</a>
+    </div>
+
+</body>
 
 </html>
-
-
-
-<ul class="quiz">
-    <li>
-        <h1>Irreversible Changes</h1>
-        <img src="../Logo.svg" class="logo" alt="Logo" width="auto" height="250px">
-        <img src="./irreversiblechanges.jpg" class="image4" alt="An egg on a frying pan and one is being heated" width="500"
-            height="550">
-        <style>
-            .logo {
-                position: absolute;
-                top: -50px;
-                left: 0;
-                margin: 10px;
-            }
-
-            .image4 {
-                position: absolute;
-                top: 150px;
-                right: 90px;
-                margin: 10px;
-            }
-        </style>
-        <h4>What happens to atoms during a chemical reaction?</h4>
-        <ul class="choices">
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question0" value="A" /><span>Dissolved</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question0" value="B" /><span>Rearranged</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question0" value="C" /><span>Created</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question0" value="D" /><span>Destroyed</span></label>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <h4>True or false? Dissolving is an example of a chemical reaction.</h4>
-        <ul class="choices">
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question1" value="A" /><span>True</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question1" value="B" /><span>False</span></label>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <h4>Which of these is an example of a chemical reaction?</h4>
-        <ul class="choices">
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question2" value="A" /><span>Cooking</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question2" value="B" /><span>Ice Melting</span></label>
-            </li>
-            <li>
-                <label><input type="radio" name="chemistry_mc5_question2" value="C" /><span>Water Boiling</span></label>
-            </li>
-        </ul>
-    </li>
-</ul>
-<button class="view-results" onclick="returnScore()">View Results</button>
-<span id="myresults" class="my-results">My results will appear here</span>
-<br>
-<br>
-<div>
-    <a href="../Chemistry/CMC.html">Back to the Multiple Choice Menu</a>
-</div>
-<br>
-<br>
-<div style="text-align: left;">
-    <a href="../Chemistry/MultipleChoice4.html">Back</a>
-</div>
