@@ -520,7 +520,7 @@ background-color: #e64a19;
 
 .resources-text {
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -528,6 +528,6 @@ background-color: #e64a19;
 
 .resources-text p {
     font-family: 'Glacial Indifference', sans-serif;
-    font-size: 22px;
+    font-size: 30px;
 }
 
