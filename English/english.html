@@ -17,41 +17,41 @@
       height: 1080px;
       margin: 0 auto;
     }
-
-    .menu-option {
-      text-decoration: none;
+    .menu-option{
+      text-decoration:none;
       color: #fff;
-      font-size: 27px;
-      margin: 0 30px; /* Adjust spacing between menu options */
+      font-size: 20px;
+      margin: 0 30px;
       transition: color 0.3s;
-      font-family: "Glacial Indifference", sans-serif;
+      font-family: 'Glacial Indifference', sans-serif;
     }
-
     .menu-option:hover {
-      color: #100604; /* Change color on hover */
+      color: #000;
     }
+  
 
     .banner {
-      position: absolute;
-      background-color: #f0a202; /* Banner color */
-      width: 100%; /* Full width */
-      height: 110px; /* Adjust the height */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: -1;
-    }
-    .banner2 {
-      position: absolute;
-      background-color: #f18805; /* Banner color */
-      width: 100%; /* Full width */
-      height: 45px; /* Adjust the height */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: -1;
-      top: 10%;
-    }
+    position: absolute;
+    background-color: #F0A202; /* Banner color */
+    width: 100%; /* Full width */
+    height: 110px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+}
+
+.banner2 {
+    position: absolute;
+    background-color: #F18805; /* Banner color */
+    width: 100%; /* Full width */
+    height: 45px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
+    top: 10%;
+}
 
     .logo {
       position: absolute;
@@ -722,8 +722,8 @@
   </style>
   <body>
     <div class="container">
-      <div class="banner"></div>
       <img class="logo" src="../Logo.svg" alt="Your Logo" />
+      <div class="banner"></div>
       <div class="banner2">
         <a href="nastava/HOMEPAGE!/homepage.html" class="menu-option">Home</a>
         <a href="../English/english.html" class="menu-option">English</a>
