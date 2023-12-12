@@ -25,7 +25,7 @@ body {
     justify-content: center; 
     align-items: center;
     z-index: 1;
-    top: 8%;
+    top: 10%;
 }
 
 .banner3 {
@@ -53,84 +53,76 @@ body {
     left: 20%;
 }
 
-.botao {
+.banner5 {
+    position: absolute;
+    background-color: #f18805;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    top: 365%;
+    padding-bottom: 5%;
+    z-index: -1;
+    padding: 4%;
+  }
+  .idk {
+    font-size: 15px;
+    position: absolute;
+    left: 3%;
+    font-family: "Glacial Indifference", sans-serif;
+    color: white;
+  }
+
+  .oneb {
+    top: 10%;
+  }
+  .twob {
+    top: 35%;
+  }
+
+  .threeb {
+    top: 60%;
+  }
+
+  .idek {
+    font-size: 18px;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    left: 70%;
+    top: 6%;
+  }
+  .botao {
     display: inline-block;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
+    background-color: #fff;
+    border: 3px solid #000;
+    color: #000;
     border-radius: 30px; /* Increase border-radius for oblong shape */
     transition: background-color 0.3s;
     cursor: pointer;
-    font-family: 'Glacial Indifference', sans-serif;
-    font-size: 18px;
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 25px;
     position: absolute;
     top: 50%;
+  }
+  .botao:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  .contact {
+    left: 65.3%;
+  }
 
-}
+  .about {
+    left: 74%;
+  }
 
-.contact {
-left: 70%;
-
-}
-
-.about {
-left: 76.5%;
-
-}
-
-.collaborate {
-left: 82%;
-
-}
-
-.idk {
-    font-size: 18px;
-    position: absolute;
-    left: 5%;
-    font-family: 'Glacial Indifference', sans-serif;
-    color: white;
-    font-weight: bold;
-
-}
-
-.oneb {
-top: 20%;
-
-}
-
-.twob{
-top: 45%;
-
-}
-
-.threeb{
-top: 70%;
-
-
-}
-
-.idek {
-    font-size: 18px;
-    position:absolute;
-    left: 5%;
-    font-family: 'Glacial Indifference', sans-serif;
-    color: white;
-    font-weight: bold;
-    left: 70%;
-    top: 20%;
-}
-
-
-.banner5 {
-    position: absolute;
-    background-color: #f18805; /* Banner color */
-    width: 100%; /* Full width */
-    height: 150px; /* Adjust the height */
-    z-index: -1;
-    top: 320%;
-    font-size: 16px;
-    
-}
+  .collaborate {
+    left: 81%;
+  }
 .banner6 {
     position: absolute;
     background-color: #FFF; /* Banner color */
@@ -188,62 +180,209 @@ top: 70%;
 
 .logo {
     position: absolute;
-    top: -60px;
+    top: -80px;
     left: 0;
     margin: 10px;
     width: auto;
     height: 190px;
 }
+h1 {
+    
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  p {
+    line-height: 1.1em;
+  }
+  .trigger {
+    position: absolute;
+    background: #f18805;
+    border: 2px solid #040f0f;
+    color: #fff;
+    font-size: 27px;
+    top: 2.5%;
+    left: 86%;
+    padding: 7px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .trigger:hover {
+    background: #040f0f;
+  }
+  .user {
+    position: absolute;
+    top: 1%;
+    left: 93%;
+    width: 6%;
+    height: 10%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .user:hover {
+    transform: scale(1.2);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 500ms;
+    opacity: 0; 
+    visibility: hidden;
+  }
+  .overlay:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  .wrapper {
+    position: relative;
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 30px;
+    color: #dd3e42;
+    font-weight: bold;
+    transition: all 200ms;
+  }
+  .close:hover {
+    transform: scale(1.2);
+  }
 
+  .column {
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details {
+    background: #f18805;
+  }
+  .details h1 {
+    color: #10213e;
+  }
 
-.buttons {
-position: absolute;
-top: 18px;
-right: 30px; /*button position */
-}
+  .signin, .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.login-button, .signup-button {
-width: 110px;
-height: 40px;
-font-size: 16px;
-border: none;
-border-radius: 30px;
-margin: 10px;
-cursor: pointer;
-transition: background-color 0.3s;
-}
+  input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    border: 2px;
+    margin: 8px 0;
+    font-family: inherit;
+    color: #202c59;
+    font-size: inherit;
+    transition: transform 0.3s ease-in-out;
+  }
 
-.login-button {
-background-color: #F18805;
-color: #fff;
-right: 5px;
-}
+  input:focus {
+    outline-color: #202c59;
+  }
+  input:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 15px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  a:hover {
+    transform: scale(1.05);
+  }
+  .form-submit {
+    background: #10213e;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+  }
+  .form-submit:hover {
+    transform: scale(1.1);
+  }
+  .signup .form-submit {
+    margin-top: 15px;
+  }
+  #signin, #signup {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  #signin, #signup:hover {
+    transform: scale(1.1);
+  }
+  
+  span {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #100604;
+  }
 
-.login-button:hover {
-background-color: #e64a19;
-}
+  .content {
+    background: #10213e;
+    color: #fff;
+    text-align: center;
+  }
 
-.signup-button {
-background-color: #D95D39;
-color: #fff;
-border: 2px dashed #fff;
-right: 50px; /* Adjust this value to move the button more to the left */
-}
-
-
-.signup-button:hover {
-background-color: #e64a19;
-}
+  @media only screen  and (max-width: 900px){
+    .wrapper{
+        width: 80%;
+    }
+ }
+ @media only screen  and (max-width: 480px){
+    .wrapper{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+    .column {
+        width: 100%;
+    }
+    .close {
+        top: 0;
+        right: 10px;
+        margin: 0;
+    }
+ }
 
 
 
 .centered-image {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
-    width: 1700px;
-    height: 1700px;
+    width: 1500px;
+    height: 1100px;
 }
 
 .book-image {
@@ -270,8 +409,8 @@ background-color: #e64a19;
 
 .mcq-image {
     position: absolute;
-    top: 105%;
-    left: 25%;
+    top: 113%;
+    left: 20%;
     transform: translate(-50%, -50%);
     width: 600px; 
     z-index: 1;
@@ -281,7 +420,7 @@ background-color: #e64a19;
 .trig2-image {
     position: absolute;
     top: 270%;
-    left: 75%;
+    left: 85%;
     transform: translate(-50%, -50%);
     width: 700px;
     
@@ -321,8 +460,8 @@ background-color: #e64a19;
 
 .textbook-image {
     position: absolute;
-    top: 174%;
-    left: 25%;
+    top: 175%;
+    left: 22%;
     transform: translate(-50%, -50%);
     width: 600px; 
     z-index: 1;
@@ -397,11 +536,8 @@ background-color: #e64a19;
 .section1 p {
     position: absolute;
     font-size: 20px;
-    top: 25%;
-    margin-left: 30%;
-    margin-right: 10%;
-    text-align: center;
-    
+    top: 15%;
+    left: 33%;
 
 }
 
@@ -436,10 +572,8 @@ background-color: #e64a19;
 .section2 p {
     position: absolute;
     font-size: 20px;
-    top: 25%;
-    left: 2%;
-    text-align: center;
-    margin-right: 30%;
+    top: 15%;
+    left: 20%;
 
 }
 
@@ -473,11 +607,8 @@ background-color: #e64a19;
 .section3 p {
     position: absolute;
     font-size: 20px;
-    top: 25%;
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 10%;
-    
+    top: 15%;
+    left: 35%;
 
 }
 
@@ -511,16 +642,14 @@ background-color: #e64a19;
 .section4 p {
     position: absolute;
     font-size: 20px;
-    top: 25%;
-    left: 2%;
-    text-align: center;
-    margin-right: 30%;
+    top: 15%;
+    left: 20%;
 
 }
 
 .resources-text {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -528,6 +657,12 @@ background-color: #e64a19;
 
 .resources-text p {
     font-family: 'Glacial Indifference', sans-serif;
-    font-size: 30px;
+    font-size: 22px;
 }
+
+
+
+ 
+
+
 
