@@ -396,13 +396,13 @@ h1 {
  /* niah */
 
 
-.buttons {
+/* .buttons {
 position: absolute;
 top: 18px;
 right: 30px; /*button position */
-}
+/* } */ 
 
-.login-button, .signup-button {
+/* .login-button, .signup-button {
 width: 110px;
 height: 40px;
 font-size: 16px;
@@ -411,29 +411,29 @@ border-radius: 30px;
 margin: 10px;
 cursor: pointer;
 transition: background-color 0.3s;
-}
+} */
 
-.login-button {
+/* .login-button {
 background-color: #F18805;
 color: #fff;
 right: 5px;
-}
+} */
 
-.login-button:hover {
+/* .login-button:hover {
 background-color: #e64a19;
-}
+} */
 
-.signup-button {
+/* .signup-button {
 background-color: #D95D39;
 color: #fff;
 border: 2px dashed #fff;
 right: 50px; /* Adjust this value to move the button more to the left */
-}
 
 
-.signup-button:hover {
+
+/* .signup-button:hover {
 background-color: #e64a19;
-}
+} */
 
 
 
@@ -563,6 +563,7 @@ background-color: #e64a19;
     border: 2px dashed #fff;
     cursor: pointer;
     
+    
 }
 
 
@@ -589,7 +590,7 @@ background-color: #e64a19;
 
 .section1 a.oblong-button {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 55%;
 
 }
@@ -628,7 +629,7 @@ background-color: #e64a19;
 
 .section2 a.oblong-button {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 30%;
 
 }
@@ -665,7 +666,7 @@ background-color: #e64a19;
 
 .section3 a.oblong-button {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 55%;
 
 }
@@ -703,7 +704,7 @@ background-color: #e64a19;
 
 .section4 a.oblong-button {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 31%;
 
 }
@@ -730,10 +731,3 @@ background-color: #e64a19;
     font-family: 'Glacial Indifference', sans-serif;
     font-size: 30px;
 }
-
-
-
- 
-
-
-
