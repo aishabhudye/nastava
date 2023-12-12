@@ -15,7 +15,7 @@ body {
 .menu-option {
   text-decoration:none;
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 30px; /* Adjust spacing between menu options */
   transition: color 0.3s;
   font-family: 'Glacial Indifference', sans-serif;
