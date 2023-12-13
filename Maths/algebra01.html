@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASTAVA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      
+    .quiz-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      width: 600px;
+      height: 2150px;
+      font-size: 22px;
+    }
+
+    .one {
+        position: absolute;
+        top:50%;
+        left:35%;
+    }
+
+    .question {
+      margin-bottom: 15px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .banner5 {
+            position: absolute;
+            background-color: #f18805; /* Banner color */
+            width: 100%; /* Full width */
+            height: 150px; /* Adjust the height */
+            z-index: -1;
+            top: 270%;
+            font-size: 16px;
+    
+}
+
+.quiz-heading {
+            font-family: 'Glacial Indifference', sans-serif;
+            font-size: 30px;
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+  <div class="banner"> </div>
+  <div class="banner2">
+    <a href="../HOMEPAGE!/homepage.html" class="menu-option">Home</a>
+    <a href="../English/english.html" class="menu-option">English</a>
+    <a href="../Maths/Maths.html" class="menu-option">Mathematics</a>
+    <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
+    <a href="../Chemistry/ChemWebpage.html" class="menu-option">Chemistry</a>
+    <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option">Physics</a>
+      
+  </div>
+
+  <!-- niah -->
+
+  <a href="#popup" class="trigger">Account</a>
+  <img class="user" src="user.png" alt="Your user" />
+  <div id="popup" class="overlay">
+    <div class="wrapper">
+      <a href="#" class="close">&times;</a>
+      <div class="column details">
+        <div class="signin">
+          <h1>Log In</h1>
+          <input type="email" placeholder="Enter Username" />
+          <input type="password" placeholder="Enter Password" />
+          <a href="#">Forgot Password</a>
+          <button class="form-submit">Log In!</button>
+          <span
+            >You don't have an account yet?
+            <button id="signup">Create it now!</button></span
+          >
+        </div>
+        <div class="signup">
+          <h1>Sign Up</h1>
+          <input type="name" placeholder="Full Name" />
+          <input type="email" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button class="form-submit">Sign Up!</button>
+          <span
+            >Already have an account?
+            <button id="signin">Log in!</button></span
+          >
+        </div>
+      </div>
+      <div class="column content">
+        <div class="signin">
+          <h1>Welcome Back!</h1>
+          <p>
+            To keep connected with us please login with your personal info
+          </p>
+        </div>
+        <div class="signup">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- niah -->
+
+<!--     <div class="buttons">
+      <button class="signup-button">Sign Up</button>
+      <button class="login-button">Log In</button>
+  </div> -->
+
+  <img class="logo" src="../Logo.svg" alt="Your Logo">
+
+  <img class="centered-image" src="../Maths/mathsrevision.svg" alt="Maths Revision">
+
+  <h1 class="quiz-heading">Algebra Factorising</h1>
+  
+   
+
+    <div class="quiz-container one">
+        <form id="quizForm">
+          <div class="question">
+    <p>1. Simplify the expression: 2x + 3x - 5</p>
+    <div class="options">
+      <label><input type="radio" name="q20" value="a"> 5x - 5</label>
+      <label><input type="radio" name="q20" value="b"> 6x - 5</label>
+      <label><input type="radio" name="q20" value="c"> 5x + 5</label>
+      <label><input type="radio" name="q20" value="d"> 5x - 8</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>2. Simplify the expression: 3(x + 2) - 2x</p>
+    <div class="options">
+      <label><input type="radio" name="q21" value="a"> x + 6</label>
+      <label><input type="radio" name="q21" value="b"> x + 4</label>
+      <label><input type="radio" name="q21" value="c"> 3x + 6</label>
+      <label><input type="radio" name="q21" value="d"> 5x - 2</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>3. Simplify the expression: 4y - 2(3y - 5)</p>
+    <div class="options">
+      <label><input type="radio" name="q22" value="a"> 4y - 6y + 10</label>
+      <label><input type="radio" name="q22" value="b"> 4y + 6y - 10</label>
+      <label><input type="radio" name="q22" value="c"> 4y - 6y - 10</label>
+      <label><input type="radio" name="q22" value="d"> 4y + 6y + 10</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>4. Simplify the expression: 2a - (a + 3b)</p>
+    <div class="options">
+      <label><input type="radio" name="q23" value="a"> a - 3b</label>
+      <label><input type="radio" name="q23" value="b"> a + 3b</label>
+      <label><input type="radio" name="q23" value="c"> a - 2a - 3b</label>
+      <label><input type="radio" name="q23" value="d"> a - 3a + 3b</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>5. Simplify the expression: 5(2x - 4) + 3</p>
+    <div class="options">
+      <label><input type="radio" name="q24" value="a"> 10x + 17</label>
+      <label><input type="radio" name="q24" value="b"> 10x - 17</label>
+      <label><input type="radio" name="q24" value="c"> 10x + 15</label>
+      <label><input type="radio" name="q24" value="d"> 10x - 15</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>6. Simplify the expression: 3(2a - 5) - 4(3 - a)</p>
+    <div class="options">
+      <label><input type="radio" name="q25" value="a"> 14a - 27</label>
+      <label><input type="radio" name="q25" value="b"> 14a + 27</label>
+      <label><input type="radio" name="q25" value="c"> 2a - 13</label>
+      <label><input type="radio" name="q25" value="d"> 2a + 13</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>7. Simplify the expression: 2(3x - 4) + 3(x + 5)</p>
+    <div class="options">
+      <label><input type="radio" name="q26" value="a"> 9x + 7</label>
+      <label><input type="radio" name="q26" value="b"> 9x - 7</label>
+      <label><input type="radio" name="q26" value="c"> 6x + 7</label>
+      <label><input type="radio" name="q26" value="d"> 6x - 7</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>8. Simplify the expression: 4(a + 2b) - 2(3a - b)</p>
+    <div class="options">
+      <label><input type="radio" name="q27" value="a"> -a + 10b</label>
+      <label><input type="radio" name="q27" value="b"> -a - 10b</label>
+      <label><input type="radio" name="q27" value="c"> 5a - 11b</label>
+      <label><input type="radio" name="q27" value="d"> 5a + 11b</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>9. Simplify the expression: 2(x - 3) - 3(2 - x)</p>
+    <div class="options">
+      <label><input type="radio" name="q28" value="a"> -5x + 13</label>
+      <label><input type="radio" name="q28" value="b"> 5x - 13</label>
+      <label><input type="radio" name="q28" value="c"> -5x - 13</label>
+      <label><input type="radio" name="q28" value="d"> 5x + 13</label>
+    </div>
+  </div>
+  
+  <div class="question">
+    <p>10. Simplify the expression: 3(4x - 2) + 2(3 - x)</p>
+    <div class="options">
+      <label><input type="radio" name="q29" value="a"> 12x - 4</label>
+      <label><input type="radio" name="q29" value="b"> 12x + 4</label>
+      <label><input type="radio" name="q29" value="c"> 10x - 6</label>
+      <label><input type="radio" name="q29" value="d"> 10x + 6</label>
+    </div>
+  </div>
+
+          <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+      </div>
+
+      <script>
+        function submitQuiz() {
+          const form = document.getElementById('quizForm');
+          let score = 0;
+      
+          // Check answers
+          if (form.q1.value === "a") score++;
+      
+          // Repeat the above for each question
+      
+          // Display the result
+          alert("Your score: " + score + "/10");
+        }
+      </script>
+
+<div class="banner5"> 
+  <div class="idk oneb"h1>TERMS & CONDITIONS</h1>
+  </div>
+  <div class="idk twob"h1>PRIVACY POLICY</h1>
+  </div>
+  <div class="idk threeb" h1>© NASTAVA LEARNING & RESOURCES</h1>
+  </div>
+  <div class="idek"h1>Find out more about us:</h1>
+  </div>
+
+  <a class="botao contact" href=""> contact</a>
+  <a class="botao about" href="">about</a>
+  <a class="botao collaborate" href="">collaborate</a>
+</div>
+
+
+</body>
+</html>
+        
