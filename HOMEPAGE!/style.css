@@ -516,76 +516,78 @@ body {
     100%{transform: scale(1);}
   }
 
-  .banner3 {
-    position: absolute;
-    background-color: #f18805;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0%;
-    top: 365%;
-    padding-bottom: 5%;
-    z-index: -1;
-    padding: 4%;
-  }
-  .idk {
-    font-size: 15px;
-    position: absolute;
-    left: 3%;
-    font-family: "Glacial Indifference", sans-serif;
-    color: white;
-  }
+  /* niah */
 
-  .oneb {
-    top: 10%;
-  }
-  .twob {
-    top: 35%;
-  }
-
-  .threeb {
-    top: 60%;
-  }
-
-  .idek {
-    font-size: 18px;
-    position: absolute;
-    color: #fff;
-    font-weight: bold;
-    left: 70%;
-    top: 6%;
-  }
-  .botao {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 3px solid #000;
-    color: #000;
-    border-radius: 30px; /* Increase border-radius for oblong shape */
-    transition: background-color 0.3s;
-    cursor: pointer;
-    font-family: "Glacial Indifference", sans-serif;
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-  }
-  .botao:hover {
+.botao:hover {
     color: #fff;
     background-color: #000;
   }
-  .contact {
-    left: 65.3%;
-  }
 
-  .about {
-    left: 74%;
-  }
+/* niah */
 
-  .collaborate {
-    left: 81%;
-  }
+.contact {
+left: 70%;
+
+}
+
+.about {
+left: 76.5%;
+
+}
+
+.collaborate {
+left: 82%;
+
+}
+
+.idk {
+    font-size: 18px;
+    position: absolute;
+    left: 5%;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: white;
+    font-weight: bold;
+
+}
+
+.oneb {
+top: 20%;
+
+}
+
+.twob{
+top: 45%;
+
+}
+
+.threeb{
+top: 70%;
+
+
+}
+
+.idek {
+    font-size: 18px;
+    position:absolute;
+    left: 5%;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: white;
+    font-weight: bold;
+    left: 70%;
+    top: 20%;
+}
+
+
+.banner5 {
+    position: absolute;
+    background-color: #f18805; /* Banner color */
+    width: 100%; /* Full width */
+    height: 150px; /* Adjust the height */
+    z-index: -1;
+    top: 320%;
+    font-size: 16px;
+    
+}
      
 
     
