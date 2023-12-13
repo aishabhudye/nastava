@@ -525,6 +525,21 @@ body {
 
 /* niah */
 
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px; /* Increase border-radius for oblong shape */
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+
+}
+
 .contact {
 left: 70%;
 
@@ -584,7 +599,7 @@ top: 70%;
     width: 100%; /* Full width */
     height: 150px; /* Adjust the height */
     z-index: -1;
-    top: 520%;
+    top: 420%;
     font-size: 16px;
     
 }
