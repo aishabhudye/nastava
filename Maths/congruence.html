@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASTAVA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      
+    .quiz-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      width: 600px;
+      height: 2150px;
+      font-size: 22px;
+    }
+
+    .one {
+        position: absolute;
+        top:50%;
+        left:35%;
+    }
+
+    .question {
+      margin-bottom: 15px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .banner5 {
+            position: absolute;
+            background-color: #f18805; /* Banner color */
+            width: 100%; /* Full width */
+            height: 150px; /* Adjust the height */
+            z-index: -1;
+            top: 270%;
+            font-size: 16px;
+    
+}
+
+.quiz-heading {
+            font-family: 'Glacial Indifference', sans-serif;
+            font-size: 30px;
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+  <div class="banner"> </div>
+  <div class="banner2">
+    <a href="../HOMEPAGE!/homepage.html" class="menu-option">Home</a>
+    <a href="../English/english.html" class="menu-option">English</a>
+    <a href="../Maths/Maths.html" class="menu-option">Mathematics</a>
+    <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
+    <a href="../Chemistry/ChemWebpage.html" class="menu-option">Chemistry</a>
+    <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option">Physics</a>
+      
+  </div>
+
+  <!-- niah -->
+
+  <a href="#popup" class="trigger">Account</a>
+  <img class="user" src="user.png" alt="Your user" />
+  <div id="popup" class="overlay">
+    <div class="wrapper">
+      <a href="#" class="close">&times;</a>
+      <div class="column details">
+        <div class="signin">
+          <h1>Log In</h1>
+          <input type="email" placeholder="Enter Username" />
+          <input type="password" placeholder="Enter Password" />
+          <a href="#">Forgot Password</a>
+          <button class="form-submit">Log In!</button>
+          <span
+            >You don't have an account yet?
+            <button id="signup">Create it now!</button></span
+          >
+        </div>
+        <div class="signup">
+          <h1>Sign Up</h1>
+          <input type="name" placeholder="Full Name" />
+          <input type="email" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button class="form-submit">Sign Up!</button>
+          <span
+            >Already have an account?
+            <button id="signin">Log in!</button></span
+          >
+        </div>
+      </div>
+      <div class="column content">
+        <div class="signin">
+          <h1>Welcome Back!</h1>
+          <p>
+            To keep connected with us please login with your personal info
+          </p>
+        </div>
+        <div class="signup">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- niah -->
+
+<!--     <div class="buttons">
+      <button class="signup-button">Sign Up</button>
+      <button class="login-button">Log In</button>
+  </div> -->
+
+  <img class="logo" src="../Logo.svg" alt="Your Logo">
+
+  <img class="centered-image" src="../Maths/mathsrevision.svg" alt="Maths Revision">
+
+  <h1 class="quiz-heading">Algebra Factorising</h1>
+  
+   
+
+    <div class="quiz-container one">
+        <form id="quizForm">
+           <div class="question">
+            <p>1. In congruent triangles, the corresponding angles are:</p>
+            <div class="options">
+              <label><input type="radio" name="q1" value="a"> Equal</label>
+              <label><input type="radio" name="q1" value="b"> Supplementary</label>
+              <label><input type="radio" name="q1" value="c"> Complementary</label>
+              <label><input type="radio" name="q1" value="d"> Vertical</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>2. If two triangles are congruent, their corresponding sides are:</p>
+            <div class="options">
+              <label><input type="radio" name="q2" value="a"> Equal</label>
+              <label><input type="radio" name="q2" value="b"> Parallel</label>
+              <label><input type="radio" name="q2" value="c"> Perpendicular</label>
+              <label><input type="radio" name="q2" value="d"> Similar</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>3. The symbol used to represent congruence between two geometric figures is:</p>
+            <div class="options">
+              <label><input type="radio" name="q3" value="a"> ≈</label>
+              <label><input type="radio" name="q3" value="b"> =</label>
+              <label><input type="radio" name="q3" value="c"> ≅</label>
+              <label><input type="radio" name="q3" value="d"> ~</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>4. If two angles of one triangle are congruent to two angles of another triangle, the triangles are:</p>
+            <div class="options">
+              <label><input type="radio" name="q4" value="a"> Similar</label>
+              <label><input type="radio" name="q4" value="b"> Congruent</label>
+              <label><input type="radio" name="q4" value="c"> Equal</label>
+              <label><input type="radio" name="q4" value="d"> Parallel</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>5. In an isosceles triangle, the angles opposite the equal sides are:</p>
+            <div class="options">
+              <label><input type="radio" name="q5" value="a"> Right angles</label>
+              <label><input type="radio" name="q5" value="b"> Acute angles</label>
+              <label><input type="radio" name="q5" value="c"> Obtuse angles</label>
+              <label><input type="radio" name="q5" value="d"> Equal</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>6. If two triangles have the same three side lengths, they are:</p>
+            <div class="options">
+              <label><input type="radio" name="q6" value="a"> Similar</label>
+              <label><input type="radio" name="q6" value="b"> Congruent</label>
+              <label><input type="radio" name="q6" value="c"> Equal</label>
+              <label><input type="radio" name="q6" value="d"> Parallel</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>7. If two triangles have the same three angles, they are:</p>
+            <div class="options">
+              <label><input type="radio" name="q7" value="a"> Similar</label>
+              <label><input type="radio" name="q7" value="b"> Congruent</label>
+              <label><input type="radio" name="q7" value="c"> Equal</label>
+              <label><input type="radio" name="q7" value="d"> Parallel</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>8. If two triangles are congruent, their corresponding angles are:</p>
+            <div class="options">
+              <label><input type="radio" name="q8" value="a"> Equal</label>
+              <label><input type="radio" name="q8" value="b"> Supplementary</label>
+              <label><input type="radio" name="q8" value="c"> Complementary</label>
+              <label><input type="radio" name="q8" value="d"> Vertical</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>9. What is the criterion for proving two triangles congruent by SAS (Side-Angle-Side)?</p>
+            <div class="options">
+              <label><input type="radio" name="q9" value="a"> Two sides and the included angle are equal</label>
+              <label><input type="radio" name="q9" value="b"> Two angles and the included side are equal</label>
+              <label><input type="radio" name="q9" value="c"> All three sides are equal</label>
+              <label><input type="radio" name="q9" value="d"> All three angles are equal</label>
+            </div>
+          </div>
+          
+          <div class="question">
+            <p>10. What is the criterion for proving two triangles congruent by ASA (Angle-Side-Angle)?</p>
+            <div class="options">
+              <label><input type="radio" name="q10" value="a"> Two sides and the included angle are equal</label>
+              <label><input type="radio" name="q10" value="b"> Two angles and the included side are equal</label>
+              <label><input type="radio" name="q10" value="c"> All three sides are equal</label>
+              <label><input type="radio" name="q10" value="d"> All three angles are equal</label>
+            </div>
+          </div>
+
+          <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+      </div>
+
+      <script>
+        function submitQuiz() {
+          const form = document.getElementById('quizForm');
+          let score = 0;
+      
+          // Check answers
+          if (form.q1.value === "a") score++;
+      
+          // Repeat the above for each question
+      
+          // Display the result
+          alert("Your score: " + score + "/10");
+        }
+      </script>
+
+<div class="banner5"> 
+  <div class="idk oneb"h1>TERMS & CONDITIONS</h1>
+  </div>
+  <div class="idk twob"h1>PRIVACY POLICY</h1>
+  </div>
+  <div class="idk threeb" h1>© NASTAVA LEARNING & RESOURCES</h1>
+  </div>
+  <div class="idek"h1>Find out more about us:</h1>
+  </div>
+
+  <a class="botao contact" href=""> contact</a>
+  <a class="botao about" href="">about</a>
+  <a class="botao collaborate" href="">collaborate</a>
+</div>
+
+
+</body>
+</html>
+        
