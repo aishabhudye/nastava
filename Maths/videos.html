@@ -10,7 +10,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 0.%;
             
         }
 
@@ -58,44 +58,46 @@
         }
 
         .one{
-            top: 97%; /* Adjust the top value to move it down */
-            height: 1500px;
+            top: 87%; /* Adjust the top value to move it down */
+            height: 1880px;
             
         }
 
         .two{
-            top: 260%; /* Adjust the top value to move it down */
-            height: 2050px;
+            top: 270%; /* Adjust the top value to move it down */
+            height: 2700px;
             
         }
 
         .three{
-            top: 480%; /* Adjust the top value to move it down */
-            height: 1050px;
+            top: 530%; /* Adjust the top value to move it down */
+            height: 1400px;
             
         }
 
         .four{
-            top: 600%; /* Adjust the top value to move it down */
-            height: 900px;
+            top: 670%; /* Adjust the top value to move it down */
+            height: 1200px;
             
         }
 
         .five{
-            top: 700%; /* Adjust the top value to move it down */
-            height: 1200px;
+            top: 792%; /* Adjust the top value to move it down */
+            height: 1600px;
             
         }
 
         .six{
             top: 50%; /* Adjust the top value to move it down */
-            height: 350px;
+            height: 300px;
+            font-size: 28px;
+            color: black;
             
         }
 
         .seven{
-            top: 830%; /* Adjust the top value to move it down */
-            height: 150px;
+            top: 950%; /* Adjust the top value to move it down */
+            height: 200px;
             
         }
 
@@ -105,9 +107,20 @@
             width: 100%; /* Full width */
             height: 150px; /* Adjust the height */
             z-index: -1;
-            top: 710%;
+            top: 990%;
             font-size: 16px;
     
+        }
+
+        .videos-heading {
+            font-family: 'Glacial Indifference', sans-serif;
+            font-size: 30px;
+            position: absolute;
+            top: 17%;
+            left: 20%;
+            transform: translateX(-50%);
+            text-align: center;
+        
         }
 
         
@@ -184,24 +197,24 @@
     <img class="logo" src="../Logo.svg" alt="Your Logo">
     <img class="centered-image" src="../Maths/mathsrevision.svg" alt="Maths Revision">
 
+    <h1 class="videos-heading">GCSE Videos</h1>
+
     <div class="rounded six">
         <h3 style="text-align: center;">Contents</h3> 
         <ul>
-        <li> Numbers </li> &nbsp
-        <li> Algebra </li> &nbsp
-        <li> Graphs</li> &nbsp
-        <li> Ratio, Proportion and Rate  </li> &nbsp
-        <li> Geometry, Shapes, Area & Angles</li> &nbsp
-        <li> Pythagoras and Trigonometry</li> &nbsp
+            <li><a href="#numbers">Numbers</a></li>
+            <li><a href="#algebra">Algebra</a></li>
+            <li><a href="#graphs">Graphs</a></li>
+            <li><a href="#ratio">Ratio, Proportion and Rate</a></li>
+            <li><a href="#geometry">Geometry, Shapes, Area & Angles</a></li>
+            <li><a href="#pythagoras">Pythagoras and Trigonometry</a></li>
         </ul>
-
-    
     </div>
 
 
     <div class="rounded one">
+        <section id="numbers">
         <h2 style="text-align: center;">Numbers</h2>
-
         <div class="topic-container">
             <span>How to Use BODMAS</span>
             <a href="https://www.youtube.com/embed/70cAYYCJBuQ" class="VID-button" target="_blank">Video</a>
@@ -332,11 +345,12 @@
             <span>How to Add or Subtract Numbers in Standard Form </span>
             <a href="https://youtu.be/5iGgvtBDKKk"class="VID-button" target="_blank">Video</a>
         </div>
+    </section>
     
     </div>
 
-
         <div class="rounded two">
+            <section id="algebra">
             <h3 style="text-align: center;">Algebra</h3>
             <div class="topic-container">
                 <span>Simplifying Algebraic Expressions </span>
@@ -531,11 +545,13 @@
                 <span> How to Prove Algebraic Identities</span>
                 <a href="https://youtu.be/5jXHWWtB_FE"class="VID-button" target="_blank">Video</a>
             </div>
+        </section>
 
         </div>
 
 
             <div class="rounded three">
+                <section id="graphs">
                 <h3 style="text-align: center;">Graphs</h3>
                 <div class="topic-container">
                     <span>Common Straight Line Equations</span>
@@ -630,11 +646,13 @@
                     <span>Distance-Velocity Graphs </span>
                     <a href="https://youtu.be/b0VKlpetP9A"class="VID-button" target="_blank">Video</a>
                 </div>
+            </section>
 
             </div>
 
 
             <div class="rounded four">
+                <section id="ratio">
                 <h3 style="text-align: center;">Ratio, Proportion and Rate </h3>
                 <div class="topic-container">
                     <span> What are Ratios & How to Simplify Them</span>
@@ -715,13 +733,13 @@
                     <span>How to Express One Number as a Percentage of Another</span>
                     <a href="https://youtu.be/zlF1O62X_Zc"class="VID-button" target="_blank">Video</a>
                 </div>
-
-
+                </section>
 
             </div>
 
 
             <div class="rounded five">
+                <section id="geometry">
                 <h3 style="text-align: center;">Geometry, Shapes, Area & Angles </h3>
                 <div class="topic-container">
                     <span> Lines of Symmetry</span>
@@ -832,11 +850,12 @@
                     <span>What are Bearings??? </span>
                     <a href="https://youtu.be/pm8i-thxvCo"class="VID-button" target="_blank">Video</a>
                 </div>
-
+            </section>
             </div>
 
 
             <div class="rounded seven">
+                <section id="pythagoras">
                 <h3 style="text-align: center;">Pythagoras and Trigonometry</h3>
                 <div class="topic-container">
                     <span> All the Trigonometry Equations you Need To know!</span>
@@ -847,6 +866,7 @@
                     <span>  What Is Pythagoras' Theorem, And How Do I Use It?</span>
                     <a href="https://youtu.be/CnHgqfBSgco"class="VID-button" target="_blank">Video</a>
                 </div>
+            </section>
 
             </div> 
 
