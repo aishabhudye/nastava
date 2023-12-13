@@ -578,13 +578,13 @@ top: 70%;
 }
 
 
-.banner5 {
+.banner3 {
     position: absolute;
     background-color: #f18805; /* Banner color */
     width: 100%; /* Full width */
     height: 150px; /* Adjust the height */
     z-index: -1;
-    top: 320%;
+    top: 520%;
     font-size: 16px;
     
 }
