@@ -76,6 +76,7 @@ function getStudentScore(studentAnswerMapping) {
 }
 
 function returnScore() {
+    document.getElementById("myresults").classList.remove('my-results-hidden');      
     document.getElementById("myresults").innerHTML =
         "Your score is " + getStudentScore(getStudentAnswerMapping());
 }
