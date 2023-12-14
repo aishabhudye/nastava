@@ -4,7 +4,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  font-family: "Glacial Indifference", sans-serif;
+/*   font-family: "Glacial Indifference", sans-serif; */
   overflow-x: hidden;
 }
 
@@ -469,7 +469,7 @@ top: 70%;
   top: 18px;
   right: 30px;
   /*button position */
-} */
+}  */
 
 /* .login-button,
 .signup-button {
