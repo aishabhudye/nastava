@@ -546,11 +546,12 @@ background-color: #e64a19;
     color: #f0a202;
     margin: 20px auto;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Add color transition */
 }
 
 .section-square:hover {
     background-color: #202c59;
+    color: #fff; /* Change text color on hover */
 }
 
 .oblong-button {
