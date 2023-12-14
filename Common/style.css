@@ -4,8 +4,8 @@ body {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-/*   font-family: "Glacial Indifference", sans-serif; */
-  overflow-x: hidden;
+  font-family: "Glacial Indifference", sans-serif;
+/*   overflow-x: hidden; */
 }
 
 .menu-option {
