@@ -5,20 +5,20 @@ body {
   display: flex;
   justify-content: flex-end;
   font-family: "Glacial Indifference", sans-serif;
+  overflow-x: hidden;
 }
 
 .menu-option {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  margin: 0 30px;
-  /* Adjust spacing between menu options */
-  transition: color 0.3s;
+    text-decoration:none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 30px; /* Adjust spacing between menu options */
+    transition: color 0.3s;
+    font-family: 'Glacial Indifference', sans-serif;
 }
 
 .menu-option:hover {
-  color: #100604;
-  /* Change color on hover */
+    color: #000; /* Change color on hover */
 }
 
 
@@ -52,13 +52,206 @@ body {
 }
 
 .logo {
-  position: absolute;
-  top: -60px;
-  left: 0;
-  margin: 10px;
-  width: auto;
-  height: 190px;
-}
+      position: absolute;
+      top: -50px;
+      left: 0;
+      margin: 10px;
+      width: auto;
+      height: 190px;
+    }
+
+
+/* niah */
+
+h1 {
+    
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  p {
+    line-height: 1.1em;
+  }
+  .trigger {
+    position: absolute;
+    background: #f18805;
+    border: 2px solid #040f0f;
+    color: #fff;
+    font-size: 27px;
+    top: 2.5%;
+    left: 86%;
+    padding: 7px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .trigger:hover {
+    background: #040f0f;
+  }
+  .user {
+    position: absolute;
+    top: 1%;
+    left: 93%;
+    width: 6%;
+    height: 10%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .user:hover {
+    transform: scale(1.2);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 500ms;
+    opacity: 0; 
+    visibility: hidden;
+  }
+  .overlay:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  .wrapper {
+    position: relative;
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 30px;
+    color: #dd3e42;
+    font-weight: bold;
+    transition: all 200ms;
+  }
+  .close:hover {
+    transform: scale(1.2);
+  }
+
+  .column {
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details {
+    background: #f18805;
+  }
+  .details h1 {
+    color: #10213e;
+  }
+
+  .signin, .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    border: 2px;
+    margin: 8px 0;
+    font-family: inherit;
+    color: #202c59;
+    font-size: inherit;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  input:focus {
+    outline-color: #202c59;
+  }
+  input:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 15px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  a:hover {
+    transform: scale(1.05);
+  }
+  .form-submit {
+    background: #10213e;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+  }
+  .form-submit:hover {
+    transform: scale(1.1);
+  }
+  .signup .form-submit {
+    margin-top: 15px;
+  }
+  #signin, #signup {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  #signin, #signup:hover {
+    transform: scale(1.1);
+  }
+  
+  span {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #100604;
+  }
+
+  .content {
+    background: #10213e;
+    color: #fff;
+    text-align: center;
+  }
+
+  @media only screen  and (max-width: 900px){
+    .wrapper{
+        width: 80%;
+    }
+ }
+ @media only screen  and (max-width: 480px){
+    .wrapper{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+    .column {
+        width: 100%;
+    }
+    .close {
+        top: 0;
+        right: 10px;
+        margin: 0;
+    }
+ }
+
+ /* niah */
  /*Above style come from other team mates*/
 
 
