@@ -446,14 +446,12 @@ text-decoration: none;
 
 .banner5 {
   position: absolute;
-  margin-top:120%;
-  background-color: #f18805;
-  /* Banner color */
-  width: 100%;
-  /* Full width */
-  height: 150px;
-  /* Adjust the height */
-  z-index: -1;
+    background-color: #f18805; /* Banner color */
+    width: 100%; /* Full width */
+    height: 150px; /* Adjust the height */
+    z-index: -1;
+    top: 320%;
+    font-size: 16px;
 }
 
 .margin-top-subject {
