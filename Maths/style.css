@@ -56,6 +56,8 @@ body {
     left: 20%;
 }
 
+/* ////////////////////////////BOTTOM BANNER CODE STARTS ///////////////////////////////////////////////////////////////// */
+
 .botao {
     display: inline-block;
     padding: 10px 20px;
@@ -142,6 +144,10 @@ top: 70%;
     font-size: 16px;
     
 }
+
+/* ///////////////////////////////////////////////////BOTTOM BANNER CODE ENDS ////////////////////////////////////////// */
+
+
 .banner6 {
     position: absolute;
     background-color: #FFF; /* Banner color */
