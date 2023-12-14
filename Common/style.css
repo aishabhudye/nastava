@@ -462,9 +462,9 @@ top: 70%;
 
 .margin-top-footer {
   margin-top: 55%;
-}
+} */
 
-.buttons {
+/* .buttons {
   position: absolute;
   top: 18px;
   right: 30px;
@@ -487,25 +487,26 @@ top: 70%;
   background-color: #F18805;
   color: #fff;
   right: 5px;
-}
-
-.login-button:hover {
-  background-color: #e64a19;
 } */
 
-/* .signup-button {
+/* .login-button:hover {
+  background-color: #e64a19;
+} 
+
+ .signup-button {
   background-color: #D95D39;
   color: #fff;
   border: 2px dashed #fff;
   right: 50px;
-  /* Adjust this value to move the button more to the left */
-}
-
-
-/* .signup-button:hover {
-  background-color: #e64a19;
+   /* Adjust this value to move the button more to the left */
 } */
- */
+
+/* 
+.signup-button:hover {
+  background-color: #e64a19;
+}  */
+
+
 .video {
   position: absolute;
   top: 50%;
