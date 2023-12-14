@@ -254,6 +254,9 @@ h1 {
  /* niah */
  /*Above style come from other team mates*/
 
+.no-hover{
+  pointer-events: none;
+}
 
 .multiple-choice {
   position: absolute;
@@ -261,6 +264,7 @@ h1 {
   left: 15%;
   width: 750px;
   z-index: -1;
+  border-radius: 5%;
 }
 
 .multiple-choice-link {
@@ -270,7 +274,14 @@ h1 {
   text-align: center;
   font-size: 35px;
   text-decoration: none;
+  z-index: -1;
 }
+
+.mc-text {
+  text-align: center;
+  font-size: 35px;
+}
+
 
 .method-link {
   color: #000;
@@ -337,6 +348,7 @@ h1 {
   right: 15%;
   width: 750px;
   z-index: -1;
+  border-radius: 5%;
 }
 
 
@@ -355,6 +367,7 @@ h1 {
   left: 15%;
   width: 750px;
   z-index: -1;
+  border-radius: 5%;
 }
 
 
@@ -444,8 +457,6 @@ top: 70%;
     top: 20%;
 }
 
-
-
 .banner5 {
   position: absolute;
     background-color: #f18805; /* Banner color */
@@ -453,9 +464,8 @@ top: 70%;
     height: 150px; /* Adjust the height */
     z-index: -1;
     top: 200%;
-    font-size: 16px
-    margin-top:120%;
-  ;
+    font-size: 16px;
+    margin-top: 120%;
 }
 
 .margin-top-subject {
@@ -463,51 +473,20 @@ top: 70%;
 }
 
 .margin-top-footer {
-  margin-top: 55%;
+  margin-top: 62%;
 }
 
-/* .buttons {
-  position: absolute;
-  top: 18px;
-  right: 30px;
-  /*button position */
-}  */
+.margin-top-footer-mcq {
+  margin-top: 110%;
+}
 
-/* .login-button,
-.signup-button {
-  width: 110px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  border-radius: 30px;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-} */
+.margin-top-footer-video {
+  margin-top:30%;
+}
 
-/* .login-button {
-  background-color: #F18805;
-  color: #fff;
-  right: 5px;
-} */
-
-/* .login-button:hover {
-  background-color: #e64a19;
-}  */
-
-/*  .signup-button {
-  background-color: #D95D39;
-  color: #fff;
-  border: 2px dashed #fff;
-  right: 50px;
-   /* Adjust this value to move the button more to the left */
-} */
-
-/* 
-.signup-button:hover {
-  background-color: #e64a19;
-}  */
-
+.margin-top-footer-exam{
+  margin-top: 110%;
+}
 
 .video {
   position: absolute;
@@ -555,13 +534,12 @@ top: 70%;
   padding: 0;
 }
 
-.choices li {
-  margin-bottom: 5px;
+.question-padding {
+  margin-bottom: 1%
 }
 
-.choices label {
-  display: flex;
-  align-items: center;
+.mc-option{
+  font-size: 25px;
 }
 
 .choices label,
@@ -575,7 +553,7 @@ input[type="radio"] {
 
 .multiple-choice-results {
   position: absolute;
-  margin-top: 75%;
+  margin-top: 67%;
   left: 15%;
 }
 
@@ -595,7 +573,7 @@ input[type="radio"] {
 
 .hint-section {
   position: absolute;
-  margin-top: 80%;
+  margin-top: 72%;
   left: 15%;
 }
 
@@ -620,7 +598,7 @@ input[type="radio"] {
 
 .nav-links {
   position: absolute;
-  margin-top:110%;
+  margin-top:100%;
   left: 30%;
   font-size: 35px;
 }
