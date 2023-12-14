@@ -377,19 +377,17 @@ h1 {
 
 
 .botao {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border-radius: 30px;
-  /* Increase border-radius for oblong shape */
-  transition: background-color 0.3s;
-  cursor: pointer;
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  text-decoration: none;
+   display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px; /* Increase border-radius for oblong shape */
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 40%;
 
 }
 
@@ -410,38 +408,42 @@ left: 87%;
 
 
 .idk {
-  font-size: 10px;
-  position: absolute;
-  left: 5%;
-  font-family: 'Glacial Indifference', sans-serif;
-  color: white;
-  font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 5%;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: white;
+    font-weight: bold;
 
 }
 
 .oneb {
-top: 5%;
+top: 20%;
+
 }
 
-.twob {
-top: 30%;
+.twob{
+top: 45%;
+
 }
 
-.threeb {
-top: 55%;
+.threeb{
+top: 70%;
+
+
 }
 
 .idek {
-  font-size: 10px;
-  position: absolute;
-  left: 5%;
-  font-family: 'Glacial Indifference', sans-serif;
-  color: white;
-  font-weight: bold;
-  left: 70%;
-  top: 20%;
-text-decoration: none;
+    font-size: 18px;
+    position:absolute;
+    left: 5%;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: white;
+    font-weight: bold;
+    left: 70%;
+    top: 20%;
 }
+
 
 
 .banner5 {
