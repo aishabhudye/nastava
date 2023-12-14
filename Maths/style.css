@@ -1,12 +1,13 @@
 body {
-    background-color: #FFFF; /* Set the background color to #DDD8C4 */
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    overflow-x: hidden;
-}
+      background-color: #fff; 
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-.banner {
+ .banner {
     position: absolute;
     background-color: #F0A202; /* Banner color */
     width: 100%; /* Full width */
