@@ -377,7 +377,7 @@ h1 {
 
 
 .botao {
-   display: inline-block;
+    display: inline-block;
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -397,12 +397,12 @@ left: 70%;
 }
 
 .about {
-left: 79%;
+left: 76.5%;
 
 }
 
 .collaborate {
-left: 87%;
+left: 82%;
 
 }
 
@@ -456,7 +456,7 @@ top: 70%;
     font-size: 16px;
 }
 
-.margin-top-subject {
+/* .margin-top-subject {
   margin-top: 92%;
 }
 
@@ -469,9 +469,9 @@ top: 70%;
   top: 18px;
   right: 30px;
   /*button position */
-}
+} */
 
-.login-button,
+/* .login-button,
 .signup-button {
   width: 110px;
   height: 40px;
@@ -491,9 +491,9 @@ top: 70%;
 
 .login-button:hover {
   background-color: #e64a19;
-}
+} */
 
-.signup-button {
+/* .signup-button {
   background-color: #D95D39;
   color: #fff;
   border: 2px dashed #fff;
@@ -505,7 +505,7 @@ top: 70%;
 .signup-button:hover {
   background-color: #e64a19;
 }
-
+ */
 .video {
   position: absolute;
   top: 50%;
