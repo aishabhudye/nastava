@@ -456,13 +456,13 @@ top: 70%;
     font-size: 16px;
 }
 
-/* .margin-top-subject {
+.margin-top-subject {
   margin-top: 92%;
 }
 
 .margin-top-footer {
   margin-top: 55%;
-} */
+}
 
 /* .buttons {
   position: absolute;
@@ -481,9 +481,9 @@ top: 70%;
   margin: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
-}
+} */
 
-.login-button {
+/* .login-button {
   background-color: #F18805;
   color: #fff;
   right: 5px;
@@ -491,9 +491,9 @@ top: 70%;
 
 /* .login-button:hover {
   background-color: #e64a19;
-} 
+}  */
 
- .signup-button {
+/*  .signup-button {
   background-color: #D95D39;
   color: #fff;
   border: 2px dashed #fff;
