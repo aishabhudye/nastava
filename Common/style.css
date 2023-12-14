@@ -452,7 +452,7 @@ top: 70%;
     width: 100%; /* Full width */
     height: 150px; /* Adjust the height */
     z-index: -1;
-    top: 280%;
+    top: 200%;
     font-size: 16px;
 }
 
@@ -502,9 +502,9 @@ top: 70%;
 }
 
 
-.signup-button:hover {
+/* .signup-button:hover {
   background-color: #e64a19;
-}
+} */
  */
 .video {
   position: absolute;
